@@ -140,7 +140,6 @@
       color: var(--black);
     }
 
-    /* תיבות השירותים */
     .services-section {
       max-width: 1000px;
       margin: 50px auto;
@@ -173,6 +172,64 @@
     .service-box p {
       font-size: 17px;
       color: var(--black);
+    }
+
+    /* --- התאמה לטלפונים --- */
+    @media (max-width: 768px) {
+      body {
+        padding-top: 30px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .image-container {
+        height: 400px;
+      }
+
+      .foreground-image {
+        width: 140px;
+        height: 140px;
+        top: 42%;
+      }
+
+      .social-icons {
+        top: 72%;
+        gap: 30px;
+      }
+
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .social-icons img.gmail-logo {
+        width: 45px;
+        height: 45px;
+      }
+
+      .about-title h2 {
+        font-size: 24px;
+      }
+
+      .about-section p {
+        font-size: 16px;
+      }
+
+      .services-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 30px 20px;
+      }
+
+      .service-box {
+        padding: 18px;
+      }
     }
   </style>
 </head>
@@ -236,3 +293,5 @@
   </div>
 </body>
 </html>
+
+
